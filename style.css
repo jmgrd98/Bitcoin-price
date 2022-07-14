@@ -15,7 +15,7 @@ main{
     margin-top: 100px;
     padding: 20px;
     width: 50vw;
-    height: 50vh;
+    height: 50%;
     color: black;
     background-color: white;
     display: flex;
@@ -29,6 +29,23 @@ main{
 p{
     font-size: 2rem;
     font-weight: bold;
+}
+
+img{
+    width: 50%;
+    animation: animation 5s infinite
+}
+
+@keyframes animation {
+    0%{
+        width: 50%
+    }
+    50%{
+        width: 60%;
+    }
+    100%{
+        width: 50%;
+    }
 }
 
 
