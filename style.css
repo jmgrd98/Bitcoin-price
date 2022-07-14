@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Tahoma', sans-serif;
 }
 
 body{
@@ -31,14 +32,23 @@ p{
     font-weight: bold;
 }
 
+#bitcoin{
+    text-align: center;
+    border: 1px solid black;
+}
+
+#fearAndGreed{
+    width: 100%;
+}
+
 img{
     width: 50%;
-    animation: animation 5s infinite
+    /*animation: animation 3s linear infinite;*/
 }
 
 @keyframes animation {
     0%{
-        width: 50%
+        width: 50%;
     }
     50%{
         width: 60%;
