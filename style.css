@@ -34,6 +34,7 @@ header{
 }
 
 nav{
+    width: 75%;
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
