@@ -3,21 +3,75 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Tahoma', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+:root{
+    --Orange: #f7951b;
+    --Grey: #9b9b9b;
+    --White: #fff;
 }
 
 body{
-    background-color: black;
+    background-color: var(--White);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--Orange);
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    color: var(--White);
+}
+
+.icon{
+    display: flex;
+    gap: 50px;
+    width: 25%;
+}
+
+.icon img{
+    width: 20%;
+    transition-property: width;
+    transition-duration: .5s;
+}
+
+.icon img:hover{
+    width: 40%;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--White);
+    font-size: 1rem;
+}
+
+
 main{
     margin-top: 100px;
     padding: 20px;
-    width: 50vw;
+    width: 100vw;
     height: 50%;
-    color: black;
+    color: var(--Grey);
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -25,6 +79,7 @@ main{
     align-items: center;
     border-radius: 50px;
     gap: 50px;
+    text-align: center;
 }
 
 p{
@@ -34,7 +89,6 @@ p{
 
 #bitcoin{
     text-align: center;
-    border: 1px solid black;
 }
 
 #fearAndGreed{
@@ -42,7 +96,7 @@ p{
 }
 
 img{
-    width: 50%;
+    width: 100px;
     /*animation: animation 3s linear infinite;*/
 }
 
