@@ -75,12 +75,28 @@ main{
     color: var(--Grey);
     background-color: white;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     border-radius: 50px;
     gap: 50px;
     text-align: center;
+}
+
+main section:first-of-type{
+    width: 50vw;
+}
+
+main section:last-of-type{
+    width: 50vw;
+}
+
+#preco{
+    display: flex;
+    align-items: center;
+}
+
+#index img{
+    width: 100px;
 }
 
 p{

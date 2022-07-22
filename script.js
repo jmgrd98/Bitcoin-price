@@ -6,6 +6,7 @@ function getPrice() {
     .then(response => response.json())
     .then(data => {
         price.innerHTML = JSON.stringify(data.ticker.high)
+        price.innerHTML
     })
     .catch(error => price.innerHTML = "Deu ruim")
 }
